@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevProject</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <input type="checkbox" id="theme-toggle" class="hidden-checkbox">
+
+    <div class="site-wrapper">
+        <!-- АНІМОВАНИЙ НЕОНОВИЙ ФОН -->
+        <div class="bg-glow blob-1"></div>
+        <div class="bg-glow blob-2"></div>
+        <div class="bg-grid"></div>
+
+        <!-- HEADER -->
+        <header class="site-header">
+            <div class="header-container">
+                <a href="#" class="logo" data-nav="1">
+                    <svg viewBox="0 0 24 24"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+                    <span>DevProject</span>
+                </a>
+
+                <nav class="navbar">
+                    <ul>
+                        <li><a href="#" class="nav-link active" data-nav="1"><svg viewBox="0 0 24 24"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>Головна</a></li>
+                        <li><a href="#" class="nav-link" data-nav="2"><svg viewBox="0 0 24 24"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>Послуги</a></li>
+                        <li><a href="#" class="nav-link" data-nav="3"><svg viewBox="0 0 24 24"><path d="M12 1v22M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>Тарифи</a></li>
+                        <li><a href="#" class="nav-link" data-nav="4"><svg viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>Контакти</a></li>
+                    </ul>
+                </nav>
+
+                <div class="actions-group">
+                    <label for="theme-toggle" class="theme-toggle-btn" title="Переключити тему">
+                        <svg class="sun-icon" viewBox="0 0 24 24"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+                        <svg class="moon-icon" viewBox="0 0 24 24"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+                        <span class="toggle-slider"></span>
+                    </label>
+                </div>
+            </div>
+        </header>
+
+        <!-- MAIN PAGE CONTAINER (HORIZONTAL SLIDER) -->
+        <div class="page-container">
+            <div class="pages-track" id="pages-track">
+
+                <!-- PAGE 1: ГОЛОВНА -->
+                <main class="page-view active" id="page-1">
+                    <div class="page-content-wrapper">
+                        <section class="hero-section glass-card">
+                            <div class="hero-text">
+                                <div class="hero-badge">
+                                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                                    Next-Gen Architecture
+                                </div>
+                                <h1 class="gradient-title">Цифрові продукти без обмежень</h1>
+                                <p>Створюємо інноваційні веб-інтерфейси з миттєвою відгукливістю. Наша технологічна база гарантує високу швидкість та бездоганний дизайн.</p>
+                                <div class="btn-group">
+                                    <a href="#" class="btn btn-glow" data-nav="4">
+                                        Розпочати
+                                        <svg viewBox="0 0 24 24"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+                                    </a>
+                                    <a href="#" class="btn btn-secondary" data-nav="2">Послуги</a>
+                                </div>
+                            </div>
+                            <div class="hero-image">
+                                <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=600&auto=format&fit=crop&q=80" alt="Workflow">
+                            </div>
+                        </section>
+
+                        <section class="features-section">
+                            <div class="section-title">
+                                <h2>Чому обирають нас</h2>
+                                <p>Наші передові стандарти розробки</p>
+                            </div>
+                            <div class="cards-grid">
+                                <div class="card-3d-wrapper">
+                                    <div class="tilt-trigger top-left"></div><div class="tilt-trigger top-right"></div><div class="tilt-trigger bottom-left"></div><div class="tilt-trigger bottom-right"></div>
+                                    <article class="card-3d glass-card">
+                                        <div class="card-icon"><svg viewBox="0 0 24 24"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg></div>
+                                        <h3>Оптимізований код</h3>
+                                        <p>Чиста архітектура для максимальної швидкості работы та SEO-рейтингу.</p>
+                                    </article>
+                                </div>
+                                <div class="card-3d-wrapper">
+                                    <div class="tilt-trigger top-left"></div><div class="tilt-trigger top-right"></div><div class="tilt-trigger bottom-left"></div><div class="tilt-trigger bottom-right"></div>
+                                    <article class="card-3d glass-card">
+                                        <div class="card-icon"><svg viewBox="0 0 24 24"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg></div>
+                                        <h3>Адаптивний UI</h3>
+                                        <p>Інтерфейс ідеально масштабується під будь-який розмір екрану.</p>
+                                    </article>
+                                </div>
+                                <div class="card-3d-wrapper">
+                                    <div class="tilt-trigger top-left"></div><div class="tilt-trigger top-right"></div><div class="tilt-trigger bottom-left"></div><div class="tilt-trigger bottom-right"></div>
+                                    <article class="card-3d glass-card">
+                                        <div class="card-icon"><svg viewBox="0 0 24 24"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg></div>
+                                        <h3>CSS Анімації</h3>
+                                        <p>Плавна інтерактивність та мікро-взаємодії на апаратному прискоренні.</p>
+                                    </article>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                </main>
+
+                <!-- PAGE 2: ПОСЛУГИ -->
+                <main class="page-view" id="page-2">
+                    <div class="page-content-wrapper">
+                        <div class="section-title">
+                            <h2>Наші Послуги</h2>
+                            <p>Комплексні рішення для масштабування вашого цифрового бізнесу</p>
+                        </div>
+                        <div class="cards-grid">
+                            <div class="card-3d-wrapper">
+                                <div class="tilt-trigger top-left"></div><div class="tilt-trigger top-right"></div><div class="tilt-trigger bottom-left"></div><div class="tilt-trigger bottom-right"></div>
+                                <article class="card-3d glass-card">
+                                    <div class="card-icon"><svg viewBox="0 0 24 24"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg></div>
+                                    <h3>Веб-розробка</h3>
+                                    <p>Створення сучасних швидких та відгукливих веб-сайтів будь-якої складності.</p>
+                                </article>
+                            </div>
+                            <div class="card-3d-wrapper">
+                                <div class="tilt-trigger top-left"></div><div class="tilt-trigger top-right"></div><div class="tilt-trigger bottom-left"></div><div class="tilt-trigger bottom-right"></div>
+                                <article class="card-3d glass-card">
+                                    <div class="card-icon"><svg viewBox="0 0 24 24"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg></div>
+                                    <h3>UI/UX Дизайн</h3>
+                                    <p>Проектування зручних та естетичних інтерфейсів з орієнтацією на користувача.</p>
+                                </article>
+                            </div>
+                            <div class="card-3d-wrapper">
+                                <div class="tilt-trigger top-left"></div><div class="tilt-trigger top-right"></div><div class="tilt-trigger bottom-left"></div><div class="tilt-trigger bottom-right"></div>
+                                <article class="card-3d glass-card">
+                                    <div class="card-icon"><svg viewBox="0 0 24 24"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg></div>
+                                    <h3>SEO & Оптимізація</h3>
+                                    <p>Прискорення завантаження сторінок та виведення в топ пошукових систем.</p>
+                                </article>
+                            </div>
+                        </div>
+                    </div>
+                </main>
+
+                <!-- PAGE 3: ТАРИФИ -->
+                <main class="page-view" id="page-3">
+                    <div class="page-content-wrapper">
+                        <input type="checkbox" id="pricing-toggle" class="hidden-checkbox">
+                        <div class="section-title">
+                            <h2>Гнучкі тарифи</h2>
+                            <p>Оберіть оптимальний план для вашого бізнесу</p>
+                        </div>
+                        <div class="pricing-control">
+                            <span class="toggle-label">Щомісяця</span>
+                            <label for="pricing-toggle" class="toggle-switch">
+                                <span class="toggle-switch-slider"></span>
+                            </label>
+                            <span class="toggle-label">Щорічно (-20%)</span>
+                        </div>
+                        <div class="pricing-grid-3col">
+                            <div class="card-3d-wrapper">
+                                <div class="tilt-trigger top-left"></div><div class="tilt-trigger top-right"></div><div class="tilt-trigger bottom-left"></div><div class="tilt-trigger bottom-right"></div>
+                                <div class="card-3d glass-card price-card">
+                                    <h3>Starter</h3>
+                                    <div class="price-val">
+                                        <span class="price-monthly">$29 <span>/міс</span></span>
+                                        <span class="price-yearly">$23 <span>/міс</span></span>
+                                    </div>
+                                    <ul class="price-features">
+                                        <li><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg> До 5 сторінок</li>
+                                        <li><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg> Чистий HTML/CSS</li>
+                                        <li><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg> Базова SEO оптимізація</li>
+                                    </ul>
+                                    <div class="price-btn-wrapper">
+                                        <button class="btn btn-secondary open-modal-btn">Обрати Starter</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-3d-wrapper">
+                                <div class="tilt-trigger top-left"></div><div class="tilt-trigger top-right"></div><div class="tilt-trigger bottom-left"></div><div class="tilt-trigger bottom-right"></div>
+                                <div class="card-3d glass-card price-card featured">
+                                    <span class="badge-popular">Популярний</span>
+                                    <h3>Pro</h3>
+                                    <div class="price-val">
+                                        <span class="price-monthly">$79 <span>/міс</span></span>
+                                        <span class="price-yearly">$63 <span>/міс</span></span>
+                                    </div>
+                                    <ul class="price-features">
+                                        <li><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg> До 20 сторінок</li>
+                                        <li><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg> CSS Анімації</li>
+                                        <li><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg> Підтримка 24/7</li>
+                                    </ul>
+                                    <div class="price-btn-wrapper">
+                                        <button class="btn btn-glow open-modal-btn">Обрати Pro</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-3d-wrapper">
+                                <div class="tilt-trigger top-left"></div><div class="tilt-trigger top-right"></div><div class="tilt-trigger bottom-left"></div><div class="tilt-trigger bottom-right"></div>
+                                <div class="card-3d glass-card price-card">
+                                    <h3>Enterprise</h3>
+                                    <div class="price-val">
+                                        <span class="price-monthly">$149 <span>/міс</span></span>
+                                        <span class="price-yearly">$119 <span>/міс</span></span>
+                                    </div>
+                                    <ul class="price-features">
+                                        <li><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg> Безліміт сторінок</li>
+                                        <li><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg> Кастомний дизайн</li>
+                                        <li><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg> Виділений розробник</li>
+                                    </ul>
+                                    <div class="price-btn-wrapper">
+                                        <button class="btn btn-secondary open-modal-btn">Обрати Enterprise</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </main>
+
+                <!-- PAGE 4: КОНТАКТИ -->
+                <main class="page-view" id="page-4">
+                    <div class="page-content-wrapper">
+                        <section class="contact-section glass-card">
+                            <div class="section-title">
+                                <h2>Контакти та локація</h2>
+                                <p>Зв'яжіться з нами або завітайте до нашого офісу</p>
+                            </div>
+                            <div class="contact-grid">
+                                <div class="contact-info">
+                                    <div class="contact-item">
+                                        <svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                                        <div class="contact-details">
+                                            <h4>Наш офіс</h4>
+                                            <p>м. Київ, вул. Технологічна, 12</p>
+                                        </div>
+                                    </div>
+                                    <div class="contact-item">
+                                        <svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                                        <div class="contact-details">
+                                            <h4>Телефон</h4>
+                                            <p><a href="tel:+380441234567">+380 (44) 123-##-##</a></p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <form class="contact-form" onsubmit="event.preventDefault(); alert('Повідомлення надіслано!');">
+                                    <div class="form-group"><input type="text" placeholder="Ваше ім'я" required></div>
+                                    <div class="form-group"><input type="email" placeholder="Ваш Email" required></div>
+                                    <div class="form-group"><textarea placeholder="Ваше повідомлення" required></textarea></div>
+                                    <button type="submit" class="btn btn-glow">Надіслати</button>
+                                </form>
+                            </div>
+                            <div class="map-container">
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d162584.22502621764!2d30.367882200863073!3d50.45010000000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4ce537b222371%3A0xbe357e62d227ea2f!2sKyiv%2C%20Ukraine!5e0!3m2!1sen!2sua!4v1700000000000!5m2!1sen!2sua" loading="lazy"></iframe>
+                            </div>
+                        </section>
+                    </div>
+                </main>
+
+            </div>
+        </div>
+
+        <!-- MODAL WINDOW -->
+        <div id="order-modal" class="modal-overlay">
+            <div class="modal-card glass-card">
+                <button class="modal-close" id="close-modal-btn">&times;</button>
+                <div class="modal-header">
+                    <h3>Замовлення тарифу</h3>
+                    <p>Заповніть форму для підключення обраного плану</p>
+                </div>
+                <form class="modal-form" onsubmit="event.preventDefault(); alert('Дякуємо! Замовлення прийнято.'); document.getElementById('order-modal').classList.remove('active');">
+                    <div class="form-group"><input type="text" placeholder="Ваше ім'я" required></div>
+                    <div class="form-group"><input type="email" placeholder="Ваш Email" required></div>
+                    <button type="submit" class="btn btn-glow">Підтвердити</button>
+                </form>
+            </div>
+        </div>
+
+        <!-- FOOTER (СТРОГО ПО ЦЕНТРУ) -->
+        <footer>
+            <div class="footer-container">
+                <div class="footer-text">&copy; 2026 DevProject. Всі права захищені.</div>
+            </div>
+        </footer>
+
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
